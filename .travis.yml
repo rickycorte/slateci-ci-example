@@ -15,9 +15,13 @@ script:
   - bundle exec middleman build
   - ls
 
+
+before_deploy:
+ - cd build
+ - ls
+
 deploy:
   provider: pages
-  local_dir: build
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
