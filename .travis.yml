@@ -14,3 +14,14 @@ before_install:
 script:
   - bundle exec middleman build
   - ls
+
+before_deploy:
+  - cd build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: gh-pages
