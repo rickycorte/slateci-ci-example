@@ -25,6 +25,8 @@ We have language bindings in Shell, Ruby, Python, and JavaScript! You can view c
 
 This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
+A cat for everyone :3
+
 # Authentication
 
 > To authorize, use this code:
