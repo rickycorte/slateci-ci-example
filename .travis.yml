@@ -9,8 +9,8 @@ before_install:
   - ls
   - git clone https://github.com/lord/slate.git
   - mv -f docs/* slate/source/
+  - cd slate
 
 script:
-  - cd slate
   - bundle exec middleman build
   - ls
