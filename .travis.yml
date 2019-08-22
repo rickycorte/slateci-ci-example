@@ -11,5 +11,6 @@ before_install:
   - mv -f docs/* slate/source/
 
 script:
+  - cd slate
   - bundle exec middleman build
   - ls
