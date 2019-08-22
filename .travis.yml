@@ -1,0 +1,15 @@
+language: ruby
+
+rvm:
+  - 2.4.0
+
+cache: bundler
+
+before_install:
+  - ls
+  - git clone https://github.com/lord/slate.git
+  - mv -f docs/* slate/source/
+
+script:
+  - bundle exec middleman build
+  - ls
